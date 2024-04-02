@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>tabledata.html</welcome-file>
+	</welcome-file-list>
+	<context-param>
+			<param-name>appName</param-name>
+			<param-value>ExcelRServletApplication</param-value>
+	</context-param>
+	<context-param>
+			<param-name>developerName</param-name>
+			<param-value>ExcelR Edtech Pvt Ltd</param-value>
+	</context-param>
+	<context-param>
+			<param-name>ChiefArchitech</param-name>
+			<param-value>Alice</param-value>
+	</context-param>
+	<context-param>
+			<param-name>ChiefArchitechContact</param-name>
+			<param-value>+918900111222</param-value>
+	</context-param>
+	<servlet>
+		<init-param>
+				<param-name>bordersize</param-name>
+				<param-value>5</param-value>
+		</init-param>
+		
+		<init-param>
+				<param-name>a</param-name>
+				<param-value>10</param-value>
+		</init-param>
+		<servlet-name>MultiplicationServlet</servlet-name>
+		<servlet-class>MultiplicationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MultiplicationServlet</servlet-name>
+		<url-pattern>/multiply</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		
+		<servlet-name>number</servlet-name>
+		<servlet-class>ValidationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>number</servlet-name>
+		<url-pattern>/validate</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		
+		<servlet-name>ShopServlet</servlet-name>
+		<servlet-class>ShopServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShopServlet</servlet-name>
+		<url-pattern>/shopservlet</url-pattern>
+	</servlet-mapping>
+</web-app>
